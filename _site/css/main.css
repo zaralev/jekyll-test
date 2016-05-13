@@ -369,14 +369,15 @@ body {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-color: #f00; }
+  background: #fff; }
 
 b {
   font-weight: 700; }
 
-#background {
-  background-color: #f00;
-  height: 100vh; }
+a {
+  color: #3E92CC; }
+  a:hover, a:active {
+    color: #0A2463; }
 
 #container {
   width: 100%;
@@ -384,25 +385,35 @@ b {
   position: relative; }
   @media screen and (min-width: 768px) {
     #container {
-      width: 90%;
-      margin: auto;
+      width: 100%;
       padding-top: 0; } }
 
 #sidebar {
   padding: 1em;
   width: 100%;
   display: block;
-  background-color: #f00;
+  color: #000;
   text-align: center;
   height: 30vh;
   overflow: hidden; }
   @media screen and (min-width: 768px) {
     #sidebar {
-      width: 30%;
+      width: 25%;
       display: inline-block;
       height: 100vh;
       float: left;
-      padding: 1em; } }
+      padding: 1em;
+      position: fixed;
+      top: 0;
+      left: 0; } }
+  #sidebar #web-pag {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      #sidebar #web-pag {
+        display: block; } }
+  @media screen and (min-width: 768px) {
+    #sidebar #mobile-pag {
+      display: none; } }
   #sidebar #left {
     width: 40%;
     display: inline-table; }
@@ -441,7 +452,8 @@ b {
       display: block;
       font-size: 1.5em;
       font-weight: bold;
-      margin: 0.3em; }
+      margin: 0.3em;
+      color: #D8315B; }
       @media screen and (min-width: 768px) {
         #sidebar #right #description #zara {
           margin: 0.5em; } }
@@ -451,7 +463,7 @@ b {
       @media screen and (min-width: 768px) {
         #sidebar #right #description #text {
           width: 80%;
-          margin: auto; } }
+          margin: 2em auto; } }
     #sidebar #right #affiliates ul {
       list-style-type: none;
       padding: 0;
@@ -466,16 +478,25 @@ b {
   padding: 1.2em;
   position: absolute;
   top: 30vh;
-  bottom: 0;
   width: 100%;
   display: inline-block;
   background-color: #fff; }
   @media screen and (min-width: 768px) {
     #blog {
-      width: 74%;
-      top: 1em;
-      margin-bottom: 1em;
-      overflow: auto; } }
+      width: 70%;
+      top: 0;
+      left: 25%;
+      min-height: 100vh; } }
+
+@media screen and (min-width: 768px) {
+  #mobile-pag {
+    display: none; } }
+
+#web-pag {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    #web-pag {
+      display: block; } }
 
 .page-heading {
   color: #f00; }

@@ -20,7 +20,6 @@
 
 
 <body>
-    <div id="background">
         <div id="container">
             <div id="sidebar">
     <div id="left">
@@ -38,7 +37,13 @@
             <span id="zara">Zara Leventhal</span>
             <div id="text">Interactive Digital Media major at Drexel University. Loving both design and development!</div>
         </div>
-
+        <!-- Pagination links -->
+        <div class="pagination" id="web-pag">
+            
+            <a href="/" class="previous">Previous</a> 
+            <span class="page_number ">Page: 2 of 2</span> 
+            <span class="next ">Next</span> 
+        </div>
         <!-- <div id="affiliates">
             <ul>
                 <li><a href="google">google</a></li>
@@ -49,90 +54,49 @@
                 <li><a href="google">aaagoogle</a></li>
             </ul>
         </div> -->
+
     </div>
 </div>
 
 
 
             <div id="blog">
-                <div class="home">
-
-    <h1 class="page-heading">thoughts</h1>
-
-    <ul class="post-list">
-        
-        <li>
-            <span class="post-meta">May 13, 2016</span>
-
-            <h2>
-          <a class="post-link" href="/jekyll/update/2016/05/13/trytestt.html">Test post</a>
-        </h2>
-            <!-- adds content preview -->
-            You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for...
-            <br>
-            <a href="/jekyll/update/2016/05/13/trytestt.html">Read more...</a>
-            <br>
-            <br>
-            <!-- end preview -->
-        </li>
-        
-        <li>
-            <span class="post-meta">May 13, 2016</span>
-
-            <h2>
-          <a class="post-link" href="/jekyll/update/2016/05/13/firstpost.html">Test post</a>
-        </h2>
-            <!-- adds content preview -->
-            You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for...
-            <br>
-            <a href="/jekyll/update/2016/05/13/firstpost.html">Read more...</a>
-            <br>
-            <br>
-            <!-- end preview -->
-        </li>
-        
-        <li>
-            <span class="post-meta">May 13, 2016</span>
-
-            <h2>
-          <a class="post-link" href="/jekyll/update/2016/05/13/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-            <!-- adds content preview -->
-            You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for...
-            <br>
-            <a href="/jekyll/update/2016/05/13/welcome-to-jekyll.html">Read more...</a>
-            <br>
-            <br>
-            <!-- end preview -->
-        </li>
-        
-        <li>
-            <span class="post-meta">May 13, 2016</span>
-
-            <h2>
-          <a class="post-link" href="/jekyll/update/2016/05/13/anoteher.html">Welcome to Jekyll!</a>
-        </h2>
-            <!-- adds content preview -->
-            You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for...
-            <br>
-            <a href="/jekyll/update/2016/05/13/anoteher.html">Read more...</a>
-            <br>
-            <br>
-            <!-- end preview -->
-        </li>
-        
-    </ul>
-
-    <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
-
-</div>
-
-
+                <!-- This loops through the paginated posts -->
                 
+                <h1><a href="/jekyll/update/2016/05/13/anoteher.html">Welcome to Jekyll!</a></h1>
+                <p class="author">
+                    <span class="date">2016-05-13 00:27:37 -0400</span>
+                </p>
+                <div class="content">
+                    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+                </div>
+                
+
+                                <!-- Pagination links -->
+                                <div class="pagination" id="mobile-pag">
+                                    
+                                    <a href="/" class="previous">Previous</a> 
+                                    <span class="page_number ">Page: 2 of 2</span> 
+                                    <span class="next ">Next</span> 
+                                </div>
+
             </div>
 
         </div>
-    </div>
 </body>
 
 </html>

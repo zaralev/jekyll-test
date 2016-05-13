@@ -8,42 +8,7 @@ layout: default
   </header>
 
   <div class="post-content">
-    <!-- {{ content }} -->
-
-
-    {% for post in paginator.posts %}
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        {% if post.link %}
-          <h2 class="post-title"><a href="{{ post.link }}" title="{{ post.title }} - {{ post.source }}">{{ post.title }}</a> <i class="fa fa-external-link header-link"></i></h2>
-        {% else %}
-            <h2 class="post-title"><a href="{{ post.url }}" title="Permalink to '{{ post.title }}'">{{ post.title }}</a></h2>
-        {% endif %}
-        <span class="post-date">{{ post.date | date: "%B, %-d %Y" }} - <a href="{{ post.url }}" title="Permalink"><i class="fa fa-link"></i></a></span>
-        <div class="post-content">
-          {{ post.content }}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-
-    <!-- Pagination links -->
-    <div class="row paginator">
-      <div class="col-md-10 col-md-offset-1">
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-            {% capture previous_page %}/{% endcapture %}
-          {% else %}
-            {% capture previous_page %}/page{{ paginator.previous_page }}{% endcapture %}
-          {% endif %}
-          <a href="{{ previous_page }}" class="btn btn-default previous">&larr; Newer Posts</a>
-        {% endif %}
-        {% if paginator.next_page %}
-          <a href="/page{{ paginator.next_page }}" class="btn btn-default next pull-right">Older Posts &rarr;</a>
-        {% endif %}
-      </div>
-    </div>
-
+    {{ content }}
 
 
 

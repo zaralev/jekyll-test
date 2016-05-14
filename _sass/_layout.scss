@@ -1,6 +1,8 @@
 // $body: 'Work Sans', Helvetica, sans-serif;
 // $body: 'Playfair Display', serif;`
-$body: 'Montserrat', Helvetica, sans-serif;
+// $body: 'Montserrat', Helvetica, sans-serif;
+$body: 'Baskerville', Georgia, Garamond, Times, serif;
+$heading: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
 $test: #e8e8e8;
 $test2: #fff;
 $sidecolor: #000;
@@ -10,7 +12,7 @@ $m2:#6A0136;
 $b:#0A2463;
 body {
     font-family: $body;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
       background: $test2;
     // background: #f1dbff; /* Old browsers */
@@ -59,17 +61,6 @@ a {
         top:0;
         left:0;
     }
-    #web-pag {
-        display: none;
-        @media screen and (min-width:768px) {
-            display: block;
-        }
-    }
-    #mobile-pag {
-        @media screen and (min-width:768px) {
-            display: none;
-        }
-    }
     #left {
         width: 40%;
         display: inline-table;
@@ -116,6 +107,7 @@ a {
                 font-weight: bold;
                 margin: 0.3em;
                 color: $m;
+                font-family:$heading;
                 @media screen and (min-width:768px) {
                     margin: 0.5em;
                 }
@@ -124,7 +116,7 @@ a {
                 width: 100%;
                 margin: auto;
                 @media screen and (min-width:768px) {
-                    width: 80%;
+                    width: 90%;
                     margin: 2em auto;
                 }
             }
@@ -158,16 +150,5 @@ a {
         top:0;
         left:25%;
         min-height:100vh;
-    }
-}
-#mobile-pag {
-    @media screen and (min-width:768px) {
-        display: none;
-    }
-}
-#web-pag {
-    display: none;
-    @media screen and (min-width:768px) {
-        display: block;
     }
 }

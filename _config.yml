@@ -19,4 +19,4 @@ github_username:  zaralev
 markdown: kramdown
 gems: [jekyll-paginate]
 paginate: 4
-paginate_path: "/page:num/"
+paginate_path: "page:num"
